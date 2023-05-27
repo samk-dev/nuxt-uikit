@@ -55,7 +55,7 @@
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/module-builder": "^0.3.1",
     "@nuxt/schema": "^3.5.1",
-    "@types/node": "^18",
+    "@types/node": "^20",
     "@types/uikit": "^3.14.0",
     "changelogen": "^0.5.3",
     "eslint": "^8.41.0",
