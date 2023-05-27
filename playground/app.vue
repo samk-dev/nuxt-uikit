@@ -1,5 +1,9 @@
 <template>
-  <div>Nuxt module playground!</div>
-</template>
+  <div>
+    <h2 class="uk-heading-small uk-font-bold">Nuxt module playground!</h2>
 
-<script setup></script>
+    <a href="https://nuxt.com">Test Scss compilation</a>
+
+    <base-section />
+  </div>
+</template>
