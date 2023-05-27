@@ -1,5 +1,5 @@
 import type { NuxtUIkitModuleOptions } from './types'
-import { defineNuxtModule, /*addPlugin,*/ createResolver } from '@nuxt/kit'
+import { defineNuxtModule /*addPlugin, createResolver*/ } from '@nuxt/kit'
 import { name, version } from '../package.json'
 
 export default defineNuxtModule<NuxtUIkitModuleOptions>({
@@ -20,41 +20,60 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
     js: true,
     icons: true
   },
-  setup(options, nuxt) {
+  setup: function (moduleOpts, nuxt) {
     // const resolver = createResolver(import.meta.url)
 
     const nuxtOptions = nuxt.options
     // provide module config to runtime/plugin.ts
     nuxtOptions.runtimeConfig.app.uikit ||= {} as NuxtUIkitModuleOptions
-    nuxtOptions.runtimeConfig.app.uikit = options
+    nuxtOptions.runtimeConfig.app.uikit = moduleOpts
 
-    const cssOptions = options.css
-    // load core + theme css
-    if (cssOptions?.coreCss && cssOptions.coreTheme) {
+    const cssOptions = moduleOpts.css
+    // load only core css
+    if (cssOptions.coreCss && !cssOptions.coreTheme) {
+      nuxtOptions.css ||= []
+      nuxtOptions.css.push(`uikit/dist/css/uikit-core.min.css`)
+    }
+    // load core + default theme css
+    if (cssOptions.coreCss && cssOptions.coreTheme) {
       nuxtOptions.css ||= []
       nuxtOptions.css.push(`uikit/dist/css/uikit.min.css`)
     }
-    // load only core css
-    if (options.css?.coreCss && !cssOptions?.coreTheme) {
-      nuxtOptions.css ||= []
-      nuxtOptions.css.push(`uikit/dist/css/uikit-core.css`)
-    }
+    // custom css build
+    if (cssOptions.build) {
+      nuxtOptions.vite ||= {}
+      nuxtOptions.vite.css ||= {}
+      nuxtOptions.vite.css.preprocessorOptions ||= {}
 
-    /**
-     * TODO:
-     *
-     * Allow scss && less customization
-     *
-     * accept an option from the config
-     * {
-     *  customCSS: true,
-     *  lang: 'scss|less',
-     *  variablesPath: '~/assets/scss/vars.scss',
-     *  mixins: 'path',
-     *  components: []
-     * }
-     *
-     */
+      // main stylesheet
+      nuxtOptions.css ||= []
+      nuxtOptions.css.push(moduleOpts?.css?.build?.stylesPath || '')
+
+      const lang = cssOptions.build.preprocessor
+      if (lang === 'scss') {
+        if (cssOptions.build.variablesPath) {
+          nuxtOptions.vite.css.preprocessorOptions.scss = {
+            additionalData: `@import "${moduleOpts?.css?.build?.variablesPath}";`
+          }
+        }
+        if (cssOptions.build.mixinsPath) {
+          nuxtOptions.vite.css.preprocessorOptions.scss = {
+            additionalData: `@import "${moduleOpts?.css?.build?.mixinsPath}";`
+          }
+        }
+      } else if (lang === 'less') {
+        if (cssOptions.build.variablesPath) {
+          nuxtOptions.vite.css.preprocessorOptions.less = {
+            additionalData: `@import "${moduleOpts?.css?.build?.variablesPath}";`
+          }
+        }
+        if (cssOptions.build.mixinsPath) {
+          nuxtOptions.vite.css.preprocessorOptions.less = {
+            additionalData: `@import "${moduleOpts?.css?.build?.mixinsPath}";`
+          }
+        }
+      }
+    }
 
     // addPlugin(resolver.resolve('./runtime/uikit.client'))
   }
