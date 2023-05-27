@@ -1,5 +1,5 @@
 import type { NuxtUIkitModuleOptions } from './types'
-import { defineNuxtModule /*addPlugin, createResolver*/ } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
 import { name, version } from '../package.json'
 
 export default defineNuxtModule<NuxtUIkitModuleOptions>({
@@ -21,10 +21,10 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
     icons: true
   },
   setup: function (moduleOpts, nuxt) {
-    // const resolver = createResolver(import.meta.url)
+    const resolver = createResolver(import.meta.url)
 
     const nuxtOptions = nuxt.options
-    // provide module config to runtime/plugin.ts
+    // provide module options to runtime/plugin.ts
     nuxtOptions.runtimeConfig.app.uikit ||= {} as NuxtUIkitModuleOptions
     nuxtOptions.runtimeConfig.app.uikit = moduleOpts
 
@@ -75,6 +75,13 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
       }
     }
 
-    // addPlugin(resolver.resolve('./runtime/uikit.client'))
+    if (moduleOpts.js) {
+      nuxtOptions.build.transpile ||= []
+      nuxtOptions.build.transpile.push('uikit')
+      addPlugin({
+        src: resolver.resolve('./runtime/uikit.client'),
+        mode: 'client'
+      })
+    }
   }
 })
