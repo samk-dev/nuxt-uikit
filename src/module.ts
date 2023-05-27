@@ -25,22 +25,24 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
 
     const nuxtOptions = nuxt.options
     // provide module options to runtime/plugin.ts
+    // @ts-ignore
     nuxtOptions.runtimeConfig.app.uikit ||= {} as NuxtUIkitModuleOptions
+    // @ts-ignore
     nuxtOptions.runtimeConfig.app.uikit = moduleOpts
 
     const cssOptions = moduleOpts.css
     // load only core css
-    if (cssOptions.coreCss && !cssOptions.coreTheme) {
+    if (cssOptions?.coreCss && !cssOptions.coreTheme) {
       nuxtOptions.css ||= []
       nuxtOptions.css.push(`uikit/dist/css/uikit-core.min.css`)
     }
     // load core + default theme css
-    if (cssOptions.coreCss && cssOptions.coreTheme) {
+    if (cssOptions?.coreCss && cssOptions.coreTheme) {
       nuxtOptions.css ||= []
       nuxtOptions.css.push(`uikit/dist/css/uikit.min.css`)
     }
     // custom css build
-    if (cssOptions.build) {
+    if (cssOptions?.build) {
       nuxtOptions.vite ||= {}
       nuxtOptions.vite.css ||= {}
       nuxtOptions.vite.css.preprocessorOptions ||= {}

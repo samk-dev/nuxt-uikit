@@ -2,13 +2,11 @@ type NUIkitCssBuildOptions = {
   /**
    * @description which css preprocessor to use
    *
-   * @default scss
    * */
   preprocessor: 'scss' | 'less'
   /**
    * @description variables path
    *
-   * @default undefined
    * */
   stylesPath: string
   /**
@@ -29,15 +27,15 @@ type NUIkitCssOptions = {
   /**
    * @description Enable/Disable the module from loading UIkit 3 core css
    *
-   * @default false
+   * @default true
    */
-  coreCss: boolean
+  coreCss?: boolean
   /**
    * @description Enable/Disable the module from loading UIkit 3 default theme css
    *
-   * @default false
+   * @default true
    */
-  coreTheme: boolean
+  coreTheme?: boolean
   /**
    * @description Customize UIkit css build
    *
