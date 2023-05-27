@@ -40,9 +40,9 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "prerelease": "npm run prepack && changelogen --prerelease && npm publish && git push --follow-tags",
     "lint": "eslint .",
-    "test": "vitest run",
-    "test:watch": "vitest watch",
+    "format": "prettier --write \"**/*.{ts,tsx,vue,json}\"",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -55,7 +55,7 @@
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/module-builder": "^0.4.0",
     "@nuxt/schema": "^3.5.1",
-    "@types/node": "^20",
+    "@types/node": "^20.2.5",
     "@types/uikit": "^3.14.0",
     "changelogen": "^0.5.3",
     "eslint": "^8.41.0",
