@@ -8,8 +8,7 @@
 [![Nuxt][nuxt-src]][nuxt-href]
 [![UIkit][uikit-src]][uikit-href]
 
-Nuxt compatibility: `^3.0.0`
-UIkit 3 version `3.16.16`
+Nuxt compatibility: `^3.0.0` Bridge: `false`
 
 ![cover image](.github/assets/nuxt-uikit3.jpg)
 
