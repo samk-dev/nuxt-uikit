@@ -1,4 +1,4 @@
-# Nuxt Uikit 3
+# Nuxt Uikit 3 Module
 
 ⚠️ the package is still work in progress and will be released soon ⚠️
 
