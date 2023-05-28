@@ -9,22 +9,6 @@ node_modules
 .tmp
 .cache
 
-# Generated dirs
-dist
-
-# Nuxt
-.nuxt
-.output
-
-# Env
-.env
-
-# Testing
-reports
-coverage
-*.lcov
-.nyc_output
-
 # VSCode
 .vscode
 
