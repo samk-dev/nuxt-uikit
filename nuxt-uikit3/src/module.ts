@@ -81,6 +81,11 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
     if (moduleOpts.js) {
       nuxtOptions.build.transpile ||= []
       nuxtOptions.build.transpile.push('uikit')
+
+      if (moduleOpts.icons) {
+        nuxtOptions.build.transpile.push('uikit/dist/js/uikit-icons')
+      }
+
       addPlugin({
         src: resolver.resolve('./runtime/uikit.client'),
         mode: 'client'
