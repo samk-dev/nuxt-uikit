@@ -28,10 +28,9 @@ UIkit is a lightweight and modular front-end framework for developing fast and p
 - Use all UIKit 3 JS components without writing any JS ✅
 - Use UIKit 3 icons pack ✅
 - UIkit 3 documentation in Nuxt Devtools ✅
+- scss/less to customize UIkit 3 theme ✅
 
 ### On version `1.0.0` release **todos:**
-
-- scss/less to customize UIkit 3 theme
 - Tests
 - Docs
 - Examples
@@ -68,19 +67,53 @@ By default, Nuxt UIkit 3 Module loads UIkit 3 core css && core theme css, but yo
 
 ### Default UIkit 3 core css && default theme css
 
-```ts
+```typescript
 export default defineNuxtConfig({
   modules: ['@samk_dev/nuxt-uikit3'],
   uikit3: {
     css: {
-      coreCss: boolean,
-      coreTheme: boolean
+      coreCss: boolean, // default true
+      coreTheme: boolean // default true
     },
-    js: boolean,
-    icons: boolean,
+    js: boolean, // default true
+    icons: boolean, // default true
   }
 })
 ```
+
+### Customize UIKit 3 css
+
+In this example we'll use sass, please refer to UIKit 3 [sass docs](https://getuikit.com/docs/sass) / [less docs](https://getuikit.com/docs/less)
+
+`Install sass && sass-loader`
+
+```bash
+npm i -D sass sass-loader
+```
+
+in `nuxt.config.ts`
+
+```typescript
+export default defineNuxtConfig({
+  modules: ['@samk_dev/nuxt-uikit3'],
+  uikit3: {
+    css: {
+      // disable coreCss && coreThemeCss
+      coreCss: false, 
+      coreTheme: false,
+      // set css preprocessor and .scss/less file paths
+      build: {
+        preprocessor: 'scss',
+        stylesPath: '~/assets/scss/site.scss',
+        variablesPath: '~/assets/scss/variables.scss',
+        mixinsPath: '~/assets/scss/mixins.scss'
+      }
+    },
+    // ...rest of uikit3 options
+  }
+})
+```
+
 
 ## Enable in Nuxt Devtools
 

@@ -1,24 +1,12 @@
 {
-  "name": "@samk_dev/nuxt-uikit3",
-  "version": "1.0.0-beta",
+  "name": "@samk_dev/nuxt-uikit3-module",
+  "version": "1.0.0-beta.5",
   "description": "Nuxt Uikit 3 module",
   "license": "MIT",
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/types.d.ts",
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
-    }
-  },
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
-  "files": [
-    "dist"
-  ],
   "workspaces": [
     "docs",
-    "examples"
+    "examples",
+    "nuxt-uikit3"
   ],
   "repository": "samk-dev/nuxt-uikit3",
   "author": {
@@ -35,43 +23,26 @@
     "yoothemes"
   ],
   "scripts": {
-    "prepack": "nuxt-module-build",
-    "dev": "PORT=3666 nuxi dev playground",
-    "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
-    "prerelease": "npm run prepack && changelogen --prerelease && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx,vue,json}\"",
     "prepare": "husky install"
-  },
-  "dependencies": {
-    "@nuxt/kit": "^3.5.1",
-    "uikit": "^3.16.19"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
     "@commitlint/config-conventional": "^17.6.3",
     "@nuxt/eslint-config": "^0.1.1",
-    "@nuxt/module-builder": "^0.4.0",
-    "@nuxt/schema": "^3.5.1",
-    "@types/node": "^20.2.5",
-    "@types/uikit": "^3.14.0",
     "changelogen": "^0.5.3",
     "eslint": "^8.41.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
-    "nuxt": "^3.5.1",
-    "prettier": "^2.8.8",
-    "sass": "^1.62.1",
-    "sass-loader": "^13.3.0"
+    "prettier": "^2.8.8"
   },
   "lint-staged": {
-    "src/**/*.{.js,ts,vue,tsx}": [
+    "nuxt-uikit3/**/*.{.js,ts,vue,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],
-    "playground/**/*.{.js,ts,vue,tsx}": [
+    "docs/**/*.{.js,ts,vue,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],
@@ -81,8 +52,5 @@
   },
   "engines": {
     "node": ">=14"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
