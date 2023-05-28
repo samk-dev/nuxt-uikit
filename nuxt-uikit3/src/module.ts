@@ -1,5 +1,6 @@
 import type { NuxtUIkitModuleOptions } from './types'
 import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { addCustomTab } from '@nuxt/devtools-kit'
 import { name, version } from '../package.json'
 
 export default defineNuxtModule<NuxtUIkitModuleOptions>({
@@ -83,6 +84,19 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
       addPlugin({
         src: resolver.resolve('./runtime/uikit.client'),
         mode: 'client'
+      })
+    }
+
+    // add uikit documentation to DevTools
+    if (nuxt.options.dev && nuxt.options.devtools) {
+      addCustomTab({
+        name: 'nuxt-uikit3',
+        title: 'UIkit 3',
+        icon: 'logos:uikit',
+        view: {
+          type: 'iframe',
+          src: 'https://getuikit.com/docs/introduction'
+        }
       })
     }
   }
