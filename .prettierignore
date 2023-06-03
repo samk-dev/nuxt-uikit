@@ -16,6 +16,9 @@ node_modules
 **/**/.nuxt
 **/**/.output
 
+# Content
+docs/content/*.md
+
 # Testing
 reports
 coverage
