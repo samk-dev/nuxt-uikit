@@ -1,7 +1,6 @@
 {
   "name": "@samk_dev/nuxt-uikit3",
   "version": "1.0.0-beta.7",
-  "repository": "@samk-dev/nuxt-uikit3",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -15,6 +14,20 @@
   "types": "./dist/types.d.ts",
   "files": [
     "dist"
+  ],
+  "repository": "samk-dev/nuxt-uikit3",
+  "author": {
+    "name": "Sam K",
+    "url": "https://samk.dev"
+  },
+  "bugs": "https://github.com/samk-dev/nuxt-uikit3/issues",
+  "keywords": [
+    "nuxt",
+    "nuxtjs",
+    "nuxt3",
+    "nuxt-module",
+    "uikit3",
+    "yoothemes"
   ],
   "scripts": {
     "prepack": "nuxt-module-build",

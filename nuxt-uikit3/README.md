@@ -1,6 +1,6 @@
 # Nuxt Uikit 3 Module
 
-⚠️ the package is still work in progress and will be released soon ⚠️
+UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -10,17 +10,13 @@
 
 Nuxt compatibility: `^3.0.0` Bridge: `false`
 
-![cover image](.github/assets/nuxt-uikit3.jpg)
+![cover image](../.github/assets/nuxt-uikit3.jpg)
 
-UIkit 3 Nuxt module
-
-UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces
-
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
+- [✨ &nbsp;Release Notes](/nuxt-uikit3/CHANGELOG.md)
 - [UIkit 3 Docs](https://getuikit.com/docs/introduction)
 - [Nuxt Docs](https://nuxt.com/docs/getting-started/introduction)
-  <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-uikit3?file=playground%2Fapp.vue) -->
-  <!-- - [📖 &nbsp;Documentation](https://example.com) -->
+- [📖 &nbsp;Documentation](https://nuxt-uikit3-docs.vercel.app)
+- [🏀 Online playground](https://stackblitz.com/edit/nuxt-uikit3-example?file=app.vue)
 
 ## Features
 
@@ -29,9 +25,6 @@ UIkit is a lightweight and modular front-end framework for developing fast and p
 - Use all UIKit 3 JS components without writing any JS ✅
 - Use UIKit 3 icons pack ✅
 - UIkit 3 documentation in Nuxt Devtools ✅
-
-### On version `1.0.0` release **todos:**
-- Tests
 
 ## Quick Setup
 
@@ -67,30 +60,39 @@ For additional configuration please refer to module docs
 npm install
 
 # Generate type stubs
-npm run dev:prepare
+npm run dev:prepare -w nuxt-uikit3
 
 # Develop with the playground
-npm run dev
+npm run dev -w nuxt-uikit3
 
 # Build the playground
-npm run dev:build
+npm run dev:build -w nuxt-uikit3
 
 # Run ESLint
 npm run lint
 
 # Release new version
-npm run release
+npm run release -w nuxt-uikit3
 ```
 
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/@samk_dev/nuxt-uikit3/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+
 [npm-version-href]: https://npmjs.com/package/@samk_dev/nuxt-uikit3
+
 [npm-downloads-src]: https://img.shields.io/npm/dm/@samk_dev/nuxt-uikit3.svg?style=flat&colorA=18181B&colorB=28CF8D
+
 [npm-downloads-href]: https://npmjs.com/package/@samk_dev/nuxt-uikit3
+
 [license-src]: https://img.shields.io/npm/l/@samk_dev/nuxt-uikit3.svg?style=flat&colorA=18181B&colorB=28CF8D
+
 [license-href]: https://npmjs.com/package/@samk_dev/nuxt-uikit3
+
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
+
 [nuxt-href]: https://nuxt.com
+
 [uikit-href]: https://getuikit.com
+
 [uikit-src]: .github/assets/uikit-badge.svg
