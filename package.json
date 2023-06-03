@@ -1,5 +1,5 @@
 {
-  "name": "@samk_dev/nuxt-uikit3-module",
+  "name": "@samk-dev/nuxt-uikit3-module",
   "description": "Nuxt Uikit 3 module",
   "license": "MIT",
   "workspaces": [

@@ -30,24 +30,24 @@ UIkit is a lightweight and modular front-end framework for developing fast and p
 
 ## Quick Setup
 
-Add `@samk_dev/nuxt-uikit3` dependency to your project
+Add `@samk-dev/nuxt-uikit3` dependency to your project
 
 ```bash
 # Using npm
-npm install --save-dev @samk_dev/nuxt-uikit3
+npm install --save-dev @samk-dev/nuxt-uikit3
 
 # Using pnpm
-pnpm add -D @samk_dev/nuxt-uikit3
+pnpm add -D @samk-dev/nuxt-uikit3
 
 # Using yarn
-yarn add --dev @samk_dev/nuxt-uikit3
+yarn add --dev @samk-dev/nuxt-uikit3
 ```
 
-Add `@samk_dev/nuxt-uikit3` to the `modules` section of `nuxt.config.ts`
+Add `@samk-dev/nuxt-uikit3` to the `modules` section of `nuxt.config.ts`
 
 ```ts
 export default defineNuxtConfig({
-  modules: ['@samk_dev/nuxt-uikit3']
+  modules: ['@samk-dev/nuxt-uikit3']
 });
 ```
 
@@ -79,17 +79,17 @@ npm run release -w nuxt-uikit3
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/@samk_dev/nuxt-uikit3/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-src]: https://img.shields.io/npm/v/@samk-dev/nuxt-uikit3/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 
-[npm-version-href]: https://npmjs.com/package/@samk_dev/nuxt-uikit3
+[npm-version-href]: https://npmjs.com/package/@samk-dev/nuxt-uikit3
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/@samk_dev/nuxt-uikit3.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-src]: https://img.shields.io/npm/dm/@samk-dev/nuxt-uikit3.svg?style=flat&colorA=18181B&colorB=28CF8D
 
-[npm-downloads-href]: https://npmjs.com/package/@samk_dev/nuxt-uikit3
+[npm-downloads-href]: https://npmjs.com/package/@samk-dev/nuxt-uikit3
 
-[license-src]: https://img.shields.io/npm/l/@samk_dev/nuxt-uikit3.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-src]: https://img.shields.io/npm/l/@samk-dev/nuxt-uikit3.svg?style=flat&colorA=18181B&colorB=28CF8D
 
-[license-href]: https://npmjs.com/package/@samk_dev/nuxt-uikit3
+[license-href]: https://npmjs.com/package/@samk-dev/nuxt-uikit3
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 
