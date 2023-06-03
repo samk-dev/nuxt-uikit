@@ -1,3 +1,3 @@
 {
-  "extends": "./nuxt-uikit3/playground/.nuxt/tsconfig.json"
+  "extends": "./docs/.nuxt/tsconfig.json"
 }
