@@ -1,6 +1,7 @@
 {
   "name": "@samk-dev/nuxt-uikit3",
   "version": "1.0.0",
+  "homepage": "https://nuxt-uikit3-docs.vercel.app",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -56,7 +57,7 @@
     "@types/uikit": "^3.14.0",
     "changelogen": "^0.5.3",
     "eslint": "^8.41.0",
-    "nuxt": "^3.5.2",
+    "nuxt": "^3.5.3",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.1",
     "vitest": "^0.31.4"

@@ -6,19 +6,19 @@
 [![Nuxt][nuxt-src]][nuxt-href]
 [![UIkit][uikit-src]][uikit-href]
 
-Nuxt compatibility: `^3.0.0` Bridge: `false`
-
 ![cover image](.github/assets/nuxt-uikit3.jpg)
 
 UIkit 3 Nuxt module
 
 UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces
 
-- [✨ &nbsp;Release Notes](/nuxt-uikit3/CHANGELOG.md)
-- [UIkit 3 Docs](https://getuikit.com/docs/introduction)
-- [Nuxt Docs](https://nuxt.com/docs/getting-started/introduction)
+Nuxt compatibility: `^3.0.0` Bridge: `false`
+
 - [📖 &nbsp;Documentation](https://nuxt-uikit3-docs.vercel.app)
+- [✨ &nbsp;Release Notes](/nuxt-uikit3/CHANGELOG.md)
 - [🏀 Online playground](https://stackblitz.com/edit/nuxt-uikit3-example?file=app.vue)
+- [📖 UIkit 3 Docs](https://getuikit.com/docs/introduction)
+- [📖 Nuxt Docs](https://nuxt.com/docs/getting-started/introduction)
 
 ## Features
 
@@ -48,7 +48,7 @@ Add `@samk-dev/nuxt-uikit3` to the `modules` section of `nuxt.config.ts`
 ```ts
 export default defineNuxtConfig({
   modules: ['@samk-dev/nuxt-uikit3']
-});
+})
 ```
 
 That's it! You can now use Nuxt Uikit 3 in your Nuxt app ✨
@@ -80,21 +80,12 @@ npm run release -w nuxt-uikit3
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/@samk-dev/nuxt-uikit3/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-
 [npm-version-href]: https://npmjs.com/package/@samk-dev/nuxt-uikit3
-
 [npm-downloads-src]: https://img.shields.io/npm/dm/@samk-dev/nuxt-uikit3.svg?style=flat&colorA=18181B&colorB=28CF8D
-
 [npm-downloads-href]: https://npmjs.com/package/@samk-dev/nuxt-uikit3
-
 [license-src]: https://img.shields.io/npm/l/@samk-dev/nuxt-uikit3.svg?style=flat&colorA=18181B&colorB=28CF8D
-
 [license-href]: https://npmjs.com/package/@samk-dev/nuxt-uikit3
-
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
-
 [nuxt-href]: https://nuxt.com
-
 [uikit-href]: https://getuikit.com
-
 [uikit-src]: .github/assets/uikit-badge.svg
