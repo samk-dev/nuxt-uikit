@@ -6,8 +6,6 @@
 [![Nuxt][nuxt-src]][nuxt-href]
 [![UIkit][uikit-src]][uikit-href]
 
-![cover image](.github/assets/nuxt-uikit3.jpg)
-
 UIkit 3 Nuxt module
 
 UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces
@@ -88,4 +86,4 @@ npm run release -w nuxt-uikit3
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
 [uikit-href]: https://getuikit.com
-[uikit-src]: .github/assets/uikit-badge.svg
+[uikit-src]: https://img.shields.io/badge/UIkit-1E87F0?style=plastic&logo=uikit
