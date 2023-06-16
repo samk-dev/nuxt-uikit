@@ -8,7 +8,7 @@ UIkit is a lightweight and modular front-end framework for developing fast and p
 [![Nuxt][nuxt-src]][nuxt-href]
 [![UIkit][uikit-src]][uikit-href]
 
-![cover image](.github/assets/nuxt-uikit3.jpg)
+[![nuxt-uikit3.jpg](https://i.postimg.cc/VkHTF16x/nuxt-uikit3.jpg)](https://postimg.cc/0zDc8T7n)
 
 Nuxt compatibility: `^3.0.0` Bridge: `false`
 
@@ -53,8 +53,6 @@ That's it! You can now use Nuxt Uikit 3 in your Nuxt app ✨
 
 For additional configuration please refer to module [docs](https://nuxt-uikit3-docs.vercel.app)
 
-```
-
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/@samk-dev/nuxt-uikit3/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
@@ -66,5 +64,4 @@ For additional configuration please refer to module [docs](https://nuxt-uikit3-d
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
 [uikit-href]: https://getuikit.com
-[uikit-src]: .github/assets/uikit-badge.svg
-```
+[uikit-src]: https://img.shields.io/badge/UIkit-1E87F0?style=plastic&logo=uikit
