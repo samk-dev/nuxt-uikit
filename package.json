@@ -4,8 +4,7 @@
   "license": "MIT",
   "workspaces": [
     "docs",
-    "examples",
-    "nuxt-uikit3"
+    "packages/*"
   ],
   "repository": "samk-dev/nuxt-uikit3",
   "author": {

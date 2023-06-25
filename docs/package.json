@@ -1,7 +1,6 @@
 {
-  "name": "docus",
-  "version": "1.0.2",
-  "private": true,
+  "name": "docs",
+  "version": "1.0.0",
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",

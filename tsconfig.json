@@ -1,3 +1,8 @@
 {
-  "extends": "./docs/.nuxt/tsconfig.json"
+  "extends": "./packages/nuxt-uikit3/playground/.nuxt/tsconfig.json",
+  "include": [
+    "./packages/nuxt-uikit3/playground/.nuxt/nuxt.d.ts",
+    "./packages/nuxt-uikit3/**/*",
+    "./packages/nuxt-uikit3/src/**/*"
+  ]
 }
