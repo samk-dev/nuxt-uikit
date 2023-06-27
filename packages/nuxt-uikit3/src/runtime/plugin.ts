@@ -1,31 +1,30 @@
-import UIkit from 'uikit'
+import type { UIkitPlugin } from './uikit.types'
 import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin(async (nuxtApp) => {
-  const uikitOptions = nuxtApp.$config.app.uikit
+  const uikitOptions = nuxtApp.$config.public.uikit
 
   if (uikitOptions.js) {
-    // const UIkit = await import('uikit')
-    //   .then((r) => r.default || r) as UIkit
-    //   .catch((err) => console.error('Failed to load UIkit: ', err))
-    nuxtApp.provide('uikit3', UIkit)
-  }
+    try {
+      const UIkit = (await import('uikit').then(
+        (r) => r.default || r
+      )) as UIkitPlugin['uikit']
 
-  if (uikitOptions.icons) {
-    await import('uikit/dist/js/uikit-icons.js')
-      .then((r) => r.default || r)
-      .catch((err) => console.error('Failed to load UIkit Icons: ', err))
+      if (uikitOptions.icons) {
+        try {
+          const Icons = await import('uikit/dist/js/uikit-icons.js').then(
+            (r) => r.default || r
+          )
+
+          UIkit.use(Icons)
+        } catch (error) {
+          console.error('Faild to load UIkit Icons: ', error)
+        }
+      }
+
+      nuxtApp.provide('uikit3', UIkit)
+    } catch (error) {
+      console.error('Failed to load UIkit: ', error)
+    }
   }
 })
-
-declare module '#app' {
-  interface NuxtApp {
-    $uikit3: typeof UIkit
-  }
-}
-declare module '@vue/runtime-core' {
-  interface ComponentCustomProperties {
-    $uikit3: typeof UIkit
-  }
-}
-export {}

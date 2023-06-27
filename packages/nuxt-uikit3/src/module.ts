@@ -32,11 +32,9 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
     const resolver = createResolver(import.meta.url)
 
     const nuxtOptions = nuxt.options
-    // provide module options to runtime/plugin.ts
-    // @ts-ignore
-    nuxtOptions.runtimeConfig.app.uikit ||= {} as NuxtUIkitModuleOptions
-    // @ts-ignore
-    nuxtOptions.runtimeConfig.app.uikit = moduleOpts
+
+    nuxtOptions.runtimeConfig.public.uikit ||= {} as NuxtUIkitModuleOptions
+    nuxtOptions.runtimeConfig.public.uikit = moduleOpts
 
     const cssOptions = moduleOpts.css
     // load only core css
@@ -86,24 +84,9 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
     }
 
     if (moduleOpts.js) {
-      nuxtOptions.build.transpile ||= []
-      nuxtOptions.build.transpile.push('uikit')
-
-      if (moduleOpts.icons) {
-        nuxtOptions.build.transpile.push('uikit/dist/js/uikit-icons')
-      }
-
       addPlugin({
-        src: resolver.resolve('./runtime/plugin'),
+        src: resolver.resolve('runtime/plugin'),
         mode: 'client'
-      })
-
-      // Fix esm error
-      extendViteConfig((config) => {
-        config.optimizeDeps = config.optimizeDeps || {}
-        config.optimizeDeps.include = config.optimizeDeps.include || []
-        config.optimizeDeps.include.push('uikit')
-        config.optimizeDeps.include.push('uikit/dist/js/uikit-icons')
       })
 
       addImports({
@@ -111,6 +94,26 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
         as: 'useUIkit3',
         from: resolver.resolve('runtime/composables/useUIkit3')
       })
+
+      nuxtOptions.build.transpile ||= []
+      nuxtOptions.build.transpile.push('uikit')
+
+      extendViteConfig((config) => {
+        config.optimizeDeps = config.optimizeDeps || {}
+        config.optimizeDeps.include = config.optimizeDeps.include || []
+        config.optimizeDeps.include.push('uikit')
+      })
+
+      if (moduleOpts.icons) {
+        nuxtOptions.build.transpile ||= []
+        nuxtOptions.build.transpile.push('uikit/dist/js/uikit-icons')
+
+        extendViteConfig((config) => {
+          config.optimizeDeps = config.optimizeDeps || {}
+          config.optimizeDeps.include = config.optimizeDeps.include || []
+          config.optimizeDeps.include.push('uikit/dist/js/uikit-icons')
+        })
+      }
     }
 
     // add uikit documentation to DevTools
