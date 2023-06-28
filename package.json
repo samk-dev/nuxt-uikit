@@ -17,10 +17,13 @@
     "nuxtjs",
     "nuxt3",
     "nuxt-module",
-    "uikit3",
-    "yoothemes"
+    "uikit3"
   ],
   "scripts": {
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:dev:prep": "pnpm --filter docs dev:prepare",
+    "uikit:dev": "pnpm --filter @samk-dev/nuxt-uikit3 dev",
+    "uikit:dev:prep": "pnpm --filter @samk-dev/nuxt-uikit3 dev:prepare",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx,vue,json}\""
   },
@@ -31,7 +34,7 @@
     "changelogen": "^0.5.3",
     "eslint": "^8.41.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^13.2.3",
     "prettier": "^2.8.8"
   },
   "lint-staged": {
