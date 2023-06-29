@@ -3,7 +3,7 @@ import { onMounted } from '#imports'
 const uikit3 = useUIkit3()
 
 onMounted(() => {
-  uikit3.modal.confirm('UIkit confirm!').then(
+  uikit3?.modal.confirm('UIkit confirm!').then(
     function () {
       console.log('Confirmed.')
     },
