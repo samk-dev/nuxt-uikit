@@ -1,30 +1,36 @@
 # Nuxt Uikit 3 Module
 
-UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces
-
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 [![UIkit][uikit-src]][uikit-href]
 
-[![nuxt-uikit3.jpg](https://i.postimg.cc/VkHTF16x/nuxt-uikit3.jpg)](https://postimg.cc/0zDc8T7n)
+UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces
 
 Nuxt compatibility: `^3.0.0` Bridge: `false`
 
-- [📖 &nbsp;Documentation](https://nuxt-uikit3-docs.vercel.app)
-- [✨ &nbsp;Release Notes](/nuxt-uikit3/CHANGELOG.md)
-- [🏀 Online playground](https://stackblitz.com/edit/nuxt-uikit3-example?file=app.vue)
-- [📖 UIkit 3 Docs](https://getuikit.com/docs/introduction)
-- [📖 Nuxt Docs](https://nuxt.com/docs/getting-started/introduction)
+[![nuxt-uikit-screenshot.jpg](https://i.postimg.cc/hvgjzgHP/nuxt-uikit-screenshot.jpg)](https://postimg.cc/N9JYZhsW)
+
+[📖 &nbsp;Documentation](https://nuxt-uikit.astratto.dev)
+
+[📖 UIkit Docs](https://getuikit.com/docs/introduction)
+
+[📖 Nuxt Docs](https://nuxt.com/docs/getting-started/introduction)
+
+[✨ &nbsp;Release Notes](/nuxt-uikit3/CHANGELOG.md)
+
+[🏀 Online playground](https://stackblitz.com/edit/nuxt-uikit3-example?file=app.vue)
 
 ## Features
 
-- Injects UIkit 3 into Nuxt ✅
-- scss/less to customize UIkit 3 theme ✅
-- Use all UIKit 3 JS components without writing any JS ✅
-- Use UIKit 3 icons pack ✅
-- UIkit 3 documentation in Nuxt Devtools ✅
+- Zero cofig, just plug && play
+- Customize UIkit default theme with scss/less
+- Share scss/less variables && mixins everywhere
+- Use all UIKit JS components without writing any JS
+- Access UIkit JS components api with `useUIkit3` composable
+- Use UIKit default icons pack
+- UIkit documentation in Nuxt Devtools
 
 ## Quick Setup
 
@@ -51,7 +57,16 @@ export default defineNuxtConfig({
 
 That's it! You can now use Nuxt Uikit 3 in your Nuxt app ✨
 
-For additional configuration please refer to module [docs](https://nuxt-uikit3-docs.vercel.app)
+For additional configuration please refer to module [docs](https://nuxt-uikit.astratto.dev)
+
+## Development
+
+```bash
+# stub
+pnpm uikit:dev:prep
+# dev
+pnpm uikit:dev
+```
 
 <!-- Badges -->
 
