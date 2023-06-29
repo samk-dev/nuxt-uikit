@@ -4,8 +4,7 @@
   "license": "MIT",
   "workspaces": [
     "docs",
-    "examples",
-    "nuxt-uikit3"
+    "packages/*"
   ],
   "repository": "samk-dev/nuxt-uikit3",
   "author": {
@@ -18,21 +17,24 @@
     "nuxtjs",
     "nuxt3",
     "nuxt-module",
-    "uikit3",
-    "yoothemes"
+    "uikit3"
   ],
   "scripts": {
+    "docs:dev": "pnpm --filter docs dev",
+    "docs:dev:prep": "pnpm --filter docs dev:prepare",
+    "uikit:dev": "pnpm --filter @samk-dev/nuxt-uikit3 dev",
+    "uikit:dev:prep": "pnpm --filter @samk-dev/nuxt-uikit3 dev:prepare",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx,vue,json}\""
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.5",
-    "@commitlint/config-conventional": "^17.6.5",
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
     "@nuxt/eslint-config": "^0.1.1",
     "changelogen": "^0.5.3",
     "eslint": "^8.41.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^13.2.3",
     "prettier": "^2.8.8"
   },
   "lint-staged": {

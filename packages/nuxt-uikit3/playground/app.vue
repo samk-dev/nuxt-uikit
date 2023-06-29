@@ -6,6 +6,8 @@
 
     <base-section />
 
+    <span data-uk-icon="icon: heart; ratio: 2" />
+
     <button
       class="uk-button uk-button-default uk-margin-small-right"
       type="button"
