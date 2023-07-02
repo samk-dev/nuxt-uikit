@@ -12,9 +12,9 @@ export default defineNuxtPlugin(async (nuxtApp) => {
 
       if (uikitOptions.icons) {
         try {
-          const Icons = await import('uikit/dist/js/uikit-icons.js').then(
+          const Icons = (await import('uikit/dist/js/uikit-icons').then(
             (r) => r.default || r
-          )
+          )) as any
 
           UIkit.use(Icons)
         } catch (error) {
