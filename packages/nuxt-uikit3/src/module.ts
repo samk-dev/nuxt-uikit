@@ -33,7 +33,9 @@ export default defineNuxtModule<NuxtUIkitModuleOptions>({
 
     const nuxtOptions = nuxt.options
 
+    // @ts-ignore
     nuxtOptions.runtimeConfig.public.uikit ||= {} as NuxtUIkitModuleOptions
+    // @ts-ignore
     nuxtOptions.runtimeConfig.public.uikit = moduleOpts
 
     const cssOptions = moduleOpts.css
