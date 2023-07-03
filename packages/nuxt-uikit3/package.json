@@ -47,7 +47,7 @@
     "uikit": "^3.16.22"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.6.3",
+    "@nuxt/devtools": "^0.6.6",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/kit": "^3.6.1",
     "@nuxt/module-builder": "^0.4.0",
