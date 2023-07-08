@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.1.2
+
+### Fix
+
+- useUIkit3 returning undefined outside mounted hook
+
+## v1.1.1
+
+### Deps
+
+- updated UIkit to latest version
+
+## v1.1.0
+
+### Feature
+
+- useUIkit3 composable
+
 ## v1.0.2
 
 ### docs
