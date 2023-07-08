@@ -33,8 +33,8 @@ importers:
   docs:
     devDependencies:
       '@nuxt-themes/docus':
-        specifier: ^1.12.3
-        version: 1.12.3(nuxt@3.6.2)(postcss@8.4.25)(rollup@3.26.2)(vue@3.3.4)
+        specifier: ^1.13.1
+        version: 1.13.1(nuxt@3.6.2)(postcss@8.4.25)(rollup@3.26.2)(vue@3.3.4)
       '@nuxt/devtools':
         specifier: ^0.6.1
         version: 0.6.7(nuxt@3.6.2)(rollup@3.26.2)(vite@4.4.2)
@@ -96,9 +96,6 @@ importers:
       sass-loader:
         specifier: ^13.3.2
         version: 13.3.2(sass@1.63.6)(webpack@5.88.1)
-      test-utils@latest:
-        specifier: link:@@nuxt/test-utils@latest
-        version: link:@@nuxt/test-utils@latest
       vitest:
         specifier: ^0.33.0
         version: 0.33.0(sass@1.63.6)
@@ -1239,8 +1236,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt-themes/docus@1.12.3(nuxt@3.6.2)(postcss@8.4.25)(rollup@3.26.2)(vue@3.3.4):
-    resolution: {integrity: sha512-qIdBUnwm/5OEhKtFJ3of+C5HEZzOU/wFx9CuY+Y3jdZVVJcDGjryLY+I1R/N9U+KuS32QevzAY9vJrdJNf8u9A==}
+  /@nuxt-themes/docus@1.13.1(nuxt@3.6.2)(postcss@8.4.25)(rollup@3.26.2)(vue@3.3.4):
+    resolution: {integrity: sha512-8mS8tQK0KKB1QNBwUUXub2Gb0xIJt5djZv6HsD4jf+4XUp1wLwMqFuNKGvbL8+Rc6G6nc9A93BbsOTCSPubcSA==}
     dependencies:
       '@nuxt-themes/elements': 0.9.4(postcss@8.4.25)(rollup@3.26.2)(vue@3.3.4)
       '@nuxt-themes/tokens': 1.9.1(postcss@8.4.25)(rollup@3.26.2)(vue@3.3.4)
