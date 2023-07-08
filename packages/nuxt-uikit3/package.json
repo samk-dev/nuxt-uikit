@@ -1,6 +1,6 @@
 {
   "name": "@samk-dev/nuxt-uikit3",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "homepage": "https://nuxt-uikit.astratto.dev",
   "license": "MIT",
   "type": "module",
@@ -43,23 +43,21 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/devtools-kit": "^0.6.3",
+    "@nuxt/devtools-kit": "^0.6.7",
+    "@types/uikit": "^3.14.0",
     "uikit": "^3.16.22"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.6.3",
-    "@nuxt/eslint-config": "^0.1.1",
-    "@nuxt/kit": "^3.6.1",
+    "@nuxt/devtools": "^0.6.7",
+    "@nuxt/kit": "^3.6.2",
     "@nuxt/module-builder": "^0.4.0",
-    "@nuxt/schema": "^3.6.1",
+    "@nuxt/schema": "^3.6.2",
     "@nuxt/test-utils": "^3.6.1",
-    "@types/node": "^20.3.3",
-    "@types/uikit": "^3.14.0",
-    "changelogen": "^0.5.3",
-    "eslint": "^8.44.0",
-    "nuxt": "^3.6.1",
+    "@types/node": "^20.4.1",
+    "changelogen": "^0.5.4",
+    "nuxt": "^3.6.2",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
-    "vitest": "^0.32.2"
+    "vitest": "^0.33.0"
   }
 }

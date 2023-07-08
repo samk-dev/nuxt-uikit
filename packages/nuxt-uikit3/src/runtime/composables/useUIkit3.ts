@@ -1,10 +1,10 @@
 import { useNuxtApp } from '#imports'
 
 export const useUIkit3 = () => {
-  if (typeof window !== 'undefined') {
-    const { $uikit3 } = useNuxtApp()
-    if (!$uikit3) console.error('Could not load UIkit plugin!')
+  const { $uikit3 } = useNuxtApp()
 
-    return $uikit3
-  }
+  if (typeof window !== 'undefined' && !$uikit3)
+    console.error('Could not load UIkit plugin!')
+
+  return $uikit3
 }
