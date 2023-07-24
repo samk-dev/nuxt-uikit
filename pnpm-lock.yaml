@@ -12,8 +12,8 @@ importers:
         specifier: ^17.6.6
         version: 17.6.6
       '@commitlint/config-conventional':
-        specifier: ^17.6.6
-        version: 17.6.6
+        specifier: ^17.6.7
+        version: 17.6.7
       '@samk-dev/eslint-config':
         specifier: ^1.0.1
         version: 1.0.1(prettier@3.0.0)(typescript@5.1.6)
@@ -96,9 +96,6 @@ importers:
       sass-loader:
         specifier: ^13.3.2
         version: 13.3.2(sass@1.63.6)(webpack@5.88.1)
-      test-utils@latest:
-        specifier: link:@@nuxt/test-utils@latest
-        version: link:@@nuxt/test-utils@latest
       vitest:
         specifier: ^0.33.0
         version: 0.33.0(sass@1.63.6)
@@ -428,8 +425,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/config-conventional@17.6.6:
-    resolution: {integrity: sha512-phqPz3BDhfj49FUYuuZIuDiw+7T6gNAEy7Yew1IBHqSohVUCWOK2FXMSAExzS2/9X+ET93g0Uz83KjiHDOOFag==}
+  /@commitlint/config-conventional@17.6.7:
+    resolution: {integrity: sha512-4oTpEUC0HRM54QRHBPMOJW1pETp7usxXn9RuNYNWHcmu8wi1mpws95hvS20u2n6HtIkTn0jfn7vHioCm4AGUTw==}
     engines: {node: '>=v14'}
     dependencies:
       conventional-changelog-conventionalcommits: 5.0.0
