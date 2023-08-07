@@ -48,7 +48,7 @@
     "uikit": "^3.16.23"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.7.2",
+    "@nuxt/devtools": "^0.7.5",
     "@nuxt/kit": "^3.6.5",
     "@nuxt/module-builder": "^0.4.0",
     "@nuxt/schema": "^3.6.5",
