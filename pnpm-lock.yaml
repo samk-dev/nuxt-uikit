@@ -63,8 +63,8 @@ importers:
         specifier: ^3.14.0
         version: 3.14.0
       uikit:
-        specifier: ^3.16.23
-        version: 3.16.23
+        specifier: ^3.16.24
+        version: 3.16.24
     devDependencies:
       '@nuxt/devtools':
         specifier: ^0.7.2
@@ -1367,7 +1367,7 @@ packages:
       '@nuxt/kit': 3.6.5(rollup@3.27.0)
       '@nuxt/schema': 3.6.5(rollup@3.27.0)
       execa: 7.2.0
-      nuxt: 3.6.5(@types/node@20.4.5)(eslint@8.46.0)(rollup@3.27.0)(typescript@4.9.5)
+      nuxt: 3.6.5(@types/node@20.4.5)(eslint@8.46.0)(rollup@3.27.0)(sass@1.64.1)(typescript@5.1.6)
       vite: 4.4.7(@types/node@20.4.5)(sass@1.64.1)
     transitivePeerDependencies:
       - rollup
@@ -1416,7 +1416,7 @@ packages:
       launch-editor: 2.6.0
       local-pkg: 0.4.3
       magicast: 0.2.10
-      nuxt: 3.6.5(@types/node@20.4.5)(eslint@8.46.0)(rollup@3.27.0)(typescript@4.9.5)
+      nuxt: 3.6.5(@types/node@20.4.5)(eslint@8.46.0)(rollup@3.27.0)(sass@1.64.1)(typescript@5.1.6)
       nypm: 0.2.2
       pacote: 15.2.0
       pathe: 1.1.1
@@ -1639,7 +1639,6 @@ packages:
       - vls
       - vti
       - vue-tsc
-    dev: true
 
   /@nuxt/vite-builder@3.6.5(@types/node@20.4.5)(eslint@8.46.0)(rollup@3.27.0)(typescript@4.9.5)(vue@3.3.4):
     resolution: {integrity: sha512-pwSpt257ApCp3XWUs8vrC7X9QHeHUv5PbbIR3+5w0n5f95XPNOQWDJa2fTPX/H6oaRJCPYAsBPqiQhQ7qW/NZQ==}
@@ -1700,6 +1699,7 @@ packages:
       - vls
       - vti
       - vue-tsc
+    dev: true
 
   /@nuxthq/studio@0.13.4(rollup@3.27.0):
     resolution: {integrity: sha512-+Jn0iN6TvRTTtTBX4qXWhtOMLL4rsyUIX3/9HM+eBAwr5/cELLw3RuI1tgp942QteTi7PvI5Av4nEi6BlLBr+A==}
@@ -7684,7 +7684,6 @@ packages:
       - vls
       - vti
       - vue-tsc
-    dev: true
 
   /nuxt@3.6.5(@types/node@20.4.5)(eslint@8.46.0)(rollup@3.27.0)(typescript@4.9.5):
     resolution: {integrity: sha512-0A7V8B1HrIXX9IlqPc2w+5ZPXi+7MYa9QVhtuGYuLvjRKoSFANhCoMPRP6pKdoxigM1MBxhLue2VmHA/VbtJCw==}
@@ -7777,6 +7776,7 @@ packages:
       - vls
       - vti
       - vue-tsc
+    dev: true
 
   /nypm@0.2.2:
     resolution: {integrity: sha512-O7bumfWgUXlJefT1Y41SF4vsCvzeUYmnKABuOKStheCObzrkWPDmqJc+RJVU+57oFu9bITcrUq8sKFIHgjCnTg==}
@@ -9956,18 +9956,18 @@ packages:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+    dev: true
 
   /typescript@5.1.6:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /ufo@1.2.0:
     resolution: {integrity: sha512-RsPyTbqORDNDxqAdQPQBpgqhWle1VcTSou/FraClYlHf6TZnQcGslpLcAphNR+sQW4q5lLWLbOsRlh9j24baQg==}
 
-  /uikit@3.16.23:
-    resolution: {integrity: sha512-dVHyOhwBg5UwTEC5IRlclVkWhlbB7G7VM7uA2h5W5wFBl2PhkklZR3npwW/yBrECTaaegM/PiUvdOc1niu7wuA==}
+  /uikit@3.16.24:
+    resolution: {integrity: sha512-b33pxCinNlgrkQf+VUNk7AzN0wFWo41C5avYbXQTtt41xOAlJD2mBQHNwlTm8s8uo+CZa3djX1inJLuY2JwusQ==}
     dev: false
 
   /ultrahtml@1.3.0:
@@ -10442,6 +10442,7 @@ packages:
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.8
       vscode-uri: 3.0.7
+    dev: true
 
   /vite-plugin-checker@0.6.1(eslint@8.46.0)(typescript@5.1.6)(vite@4.3.9):
     resolution: {integrity: sha512-4fAiu3W/IwRJuJkkUZlWbLunSzsvijDf0eDN6g/MGh6BUK4SMclOTGbLJCPvdAcMOQvVmm8JyJeYLYd4//8CkA==}
@@ -10494,7 +10495,6 @@ packages:
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.8
       vscode-uri: 3.0.7
-    dev: true
 
   /vite-plugin-inspect@0.7.33(rollup@3.27.0)(vite@4.4.7):
     resolution: {integrity: sha512-cQRLQKa/+Ua++5hN0IZfqNn1JYXBg2eCQOSUatPTwhXMO7nwfSvhhSc45E1nXfBBEhzLLOxgr1OdbDu55PiDDA==}
