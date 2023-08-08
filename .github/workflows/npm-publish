@@ -17,7 +17,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm build
+        run: pnpm --filter @samk-dev/nuxt-uikit3 prepack
 
       - name: Publish
         run: pnpm --filter @samk-dev/nuxt-uikit3 publish --access public --no-git-checks
