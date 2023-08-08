@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.1.4
+
+### chore(deps)
+
+- bump uikit
+- bump other dev deps
+
+### ci
+
+- added npm publish workflow (still testing)
+
+## v1.1.3
+
+### chore(deps)
+
+- bump uikit
+- bump nuxt deps && other dev deps
+
 ## v1.1.2
 
 ### Fix

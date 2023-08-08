@@ -1,4 +1,3 @@
-import type { NuxtUIkitModuleOptions } from './types'
 import {
   defineNuxtModule,
   addPlugin,
@@ -9,6 +8,7 @@ import {
 } from '@nuxt/kit'
 import { addCustomTab } from '@nuxt/devtools-kit'
 import { name, version } from '../package.json'
+import type { NuxtUIkitModuleOptions } from './types'
 
 export default defineNuxtModule<NuxtUIkitModuleOptions>({
   meta: {
