@@ -1,27 +1,32 @@
 name: NPM Publish
-
 on:
   release:
-    types: [created]
-
+    types:
+      - created
 jobs:
   build:
-   runs-on: ubuntu-latest
-
+    runs-on: ubuntu-latest
     steps:
-        uses: actions/checkout@v3
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node-version: "18.x"
-          registry-url: "https://registry.npmjs.org"
-
+          node-version: 18.x
+          registry-url: https://registry.npmjs.org
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         with:
-          version: "8"
+          version: 8
           run_install: false
 
-      - run: pnpm --filter @samk-dev/nuxt-uikit3 install
+      - name: Install deps
+        run: pnpm install
+
+      - name: Prepare module
+        run: pnpm --filter @samk-dev/nuxt-uikit3 run dev:prepare
+
+      - name: Build
+        run: pnpm --filter @samk-dev/nuxt-uikit3 run prepack
+
       - name: Publish
         run: pnpm --filter @samk-dev/nuxt-uikit3 publish --access public --no-git-checks
         env:
