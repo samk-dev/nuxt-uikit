@@ -56,7 +56,7 @@
     "@types/node": "^20.4.8",
     "changelogen": "^0.5.4",
     "nuxt": "^3.6.5",
-    "sass": "^1.64.2",
+    "sass": "^1.65.1",
     "sass-loader": "^13.3.2",
     "vitest": "^0.34.1"
   }
