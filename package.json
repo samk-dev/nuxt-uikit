@@ -28,7 +28,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,vue,json}\""
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.7",
+    "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.6.7",
     "@samk-dev/eslint-config": "^1.0.3",
     "@samk-dev/prettier-config": "^1.0.1",
