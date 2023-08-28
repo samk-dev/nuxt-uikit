@@ -58,7 +58,6 @@
     "nuxt": "^3.7.0",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
-    "test-utils@latest": "link:@@nuxt/test-utils@latest",
-    "vitest": "^0.33.0"
+    "vitest": "^0.34.1"
   }
 }

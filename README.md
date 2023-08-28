@@ -70,6 +70,8 @@ pnpm uikit:dev
 pnpm docs:dev
 ```
 
+![Alt](https://repobeats.axiom.co/api/embed/466ce9e1cb6c5ff2ae8fffd303de5a9359225e74.svg "Repobeats analytics image")
+
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/@samk-dev/nuxt-uikit3/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
