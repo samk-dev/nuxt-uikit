@@ -1,5 +1,20 @@
 # Changelog
 
+## v1.1.5
+
+- update UIkit to latest version
+- dev deps update
+
+## v1.1.4
+
+- update UIkit to latest version
+- dev deps update
+
+## v1.1.3
+
+- update UIkit to latest version
+- dev deps update
+
 ## v1.1.2
 
 ### Fix
