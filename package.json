@@ -34,7 +34,7 @@
     "@samk-dev/prettier-config": "^1.0.1",
     "changelogen": "^0.5.3",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3"
+    "lint-staged": "^14.0.1"
   },
   "lint-staged": {
     "nuxt-uikit3/**/*.{.js,ts,vue,tsx}": [
