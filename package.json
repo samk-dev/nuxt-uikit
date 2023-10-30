@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/config-conventional": "^18.1.0",
     "@samk-dev/eslint-config": "^1.0.4",
     "@samk-dev/prettier-config": "^1.0.2",
     "changelogen": "^0.5.5",
