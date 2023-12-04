@@ -43,7 +43,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/devtools-kit": "^0.8.2",
+    "@nuxt/devtools-kit": "^1.0.4",
     "@types/uikit": "^3.14.0",
     "uikit": "^3.16.26"
   },
